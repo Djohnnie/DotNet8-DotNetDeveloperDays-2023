@@ -30,7 +30,7 @@ namespace Interception
 {
     public static class Interceptor
     {
-        [InterceptsLocation("C:\\_-_GITHUB_-_\\DotNet8-Swetugg-Gothenburg-2023\\CSharp12.Interceptors\\Program.cs", 8, 25)]
+        [InterceptsLocation("C:\\_-_GITHUB_-_\\DotNet8-DotNetDeveloperDays-2023\\CSharp12.Interceptors\\Program.cs", 8, 25)]
         public static string InterceptedMyRandomMethod(int a, int b)
         {
             return "INTERCEPTED!";

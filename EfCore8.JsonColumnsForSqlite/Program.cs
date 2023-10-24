@@ -25,38 +25,38 @@ using (var scope1 = serviceProvider.CreateAsyncScope())
         StartOfYearlyHoliday = new DateOnly(2023, 11, 1),
         EndOfYearlyHoliday = new DateOnly(2023, 11, 11),
         OpeningHours = new List<OpeningHours>
-    {
-        new OpeningHours
         {
-            DayOfWeek = DayOfWeek.Tuesday,
-            OpensAt = new TimeOnly(9, 0),
-            ClosesAt = new TimeOnly(18, 0)
-        },
-        new OpeningHours
-        {
-            DayOfWeek = DayOfWeek.Wednesday,
-            OpensAt = new TimeOnly(9, 0),
-            ClosesAt = new TimeOnly(18, 0)
-        },
-        new OpeningHours
-        {
-            DayOfWeek = DayOfWeek.Thursday,
-            OpensAt = new TimeOnly(9, 0),
-            ClosesAt = new TimeOnly(18, 0)
-        },
-        new OpeningHours
-        {
-            DayOfWeek = DayOfWeek.Friday,
-            OpensAt = new TimeOnly(9, 0),
-            ClosesAt = new TimeOnly(22, 0)
-        },
-        new OpeningHours
-        {
-            DayOfWeek = DayOfWeek.Saturday,
-            OpensAt = new TimeOnly(14, 0),
-            ClosesAt = new TimeOnly(21, 0)
+            new OpeningHours
+            {
+                DayOfWeek = DayOfWeek.Tuesday,
+                OpensAt = new TimeOnly(9, 0),
+                ClosesAt = new TimeOnly(18, 0)
+            },
+            new OpeningHours
+            {
+                DayOfWeek = DayOfWeek.Wednesday,
+                OpensAt = new TimeOnly(9, 0),
+                ClosesAt = new TimeOnly(18, 0)
+            },
+            new OpeningHours
+            {
+                DayOfWeek = DayOfWeek.Thursday,
+                OpensAt = new TimeOnly(9, 0),
+                ClosesAt = new TimeOnly(18, 0)
+            },
+            new OpeningHours
+            {
+                DayOfWeek = DayOfWeek.Friday,
+                OpensAt = new TimeOnly(9, 0),
+                ClosesAt = new TimeOnly(22, 0)
+            },
+            new OpeningHours
+            {
+                DayOfWeek = DayOfWeek.Saturday,
+                OpensAt = new TimeOnly(14, 0),
+                ClosesAt = new TimeOnly(21, 0)
+            }
         }
-    }
     });
     await dbContext.SaveChangesAsync();
 }

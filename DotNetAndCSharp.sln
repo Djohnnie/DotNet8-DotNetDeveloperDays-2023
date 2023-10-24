@@ -91,7 +91,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet8.TimeAbstraction.Tes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet8.StreamBasedZipFile", "Dotnet8.StreamBasedZipFile\Dotnet8.StreamBasedZipFile.csproj", "{DBCA2D90-B7D8-4D2C-A2CC-8BE100367142}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet8.Sha8Support", "DotNet8.Sha8Support\DotNet8.Sha8Support.csproj", "{B96B6E1D-B7AE-416F-B287-93449AC18980}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet8.Sha3Support", "DotNet8.Sha3Support\DotNet8.Sha3Support.csproj", "{B96B6E1D-B7AE-416F-B287-93449AC18980}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10. .NET 8 - Keyed Dependency Injection", "10. .NET 8 - Keyed Dependency Injection", "{3086EC51-FC9F-4C7D-A2FB-6D11C0A59B76}"
 EndProject
@@ -135,11 +135,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCore8.JsonColumnsForSqlit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCore8.SentinelValuesAndDatabaseDefaults", "EfCore8.SentinelValuesAndDatabaseDefaults\EfCore8.SentinelValuesAndDatabaseDefaults.csproj", "{55B0AEB6-8EC2-49D0-9401-942DBA0CE6EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCore8.ComplexTypesAsValueObjects", "EfCore8.ComplexTypesAsValueObjects\EfCore8.ComplexTypesAsValueObjects.csproj", "{7D74F194-C09B-4249-8226-BF16B2CD9CD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCore8.ComplexTypesAsValueObjects", "EfCore8.ComplexTypesAsValueObjects\EfCore8.ComplexTypesAsValueObjects.csproj", "{7D74F194-C09B-4249-8226-BF16B2CD9CD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCore8.ImprovedExecuteUpdateAndExecuteDelete", "EfCore8.ImprovedExecuteUpdateAndExecuteDelete\EfCore8.ImprovedExecuteUpdateAndExecuteDelete.csproj", "{2D7FDE22-B5E1-402A-A6C8-60679AA03B9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCore8.ImprovedExecuteUpdateAndExecuteDelete", "EfCore8.ImprovedExecuteUpdateAndExecuteDelete\EfCore8.ImprovedExecuteUpdateAndExecuteDelete.csproj", "{2D7FDE22-B5E1-402A-A6C8-60679AA03B9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCore8.NumericRowVersions", "EfCore8.NumericRowVersions\EfCore8.NumericRowVersions.csproj", "{772FF8B2-7A10-4EF4-9A43-5BFF183FAE6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCore8.NumericRowVersions", "EfCore8.NumericRowVersions\EfCore8.NumericRowVersions.csproj", "{772FF8B2-7A10-4EF4-9A43-5BFF183FAE6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCore8.HierarchyIdSupportForSqlServer", "EfCore8.HierarchyIdSupportForSqlServer\EfCore8.HierarchyIdSupportForSqlServer.csproj", "{64343507-191E-424F-88CC-640BBC75B3A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -295,6 +297,10 @@ Global
 		{772FF8B2-7A10-4EF4-9A43-5BFF183FAE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{772FF8B2-7A10-4EF4-9A43-5BFF183FAE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{772FF8B2-7A10-4EF4-9A43-5BFF183FAE6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64343507-191E-424F-88CC-640BBC75B3A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64343507-191E-424F-88CC-640BBC75B3A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64343507-191E-424F-88CC-640BBC75B3A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64343507-191E-424F-88CC-640BBC75B3A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -337,6 +343,7 @@ Global
 		{7D74F194-C09B-4249-8226-BF16B2CD9CD1} = {0B772F44-A4B1-4B26-8111-299052725950}
 		{2D7FDE22-B5E1-402A-A6C8-60679AA03B9F} = {4DC3E4A8-51AD-4365-BBA4-BB0FF49E780D}
 		{772FF8B2-7A10-4EF4-9A43-5BFF183FAE6A} = {21C3441D-E370-47F1-9F1F-1DED8ADE6FFF}
+		{64343507-191E-424F-88CC-640BBC75B3A7} = {EDD877DD-F665-4425-9F7A-F441CFE31994}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {09DE9320-026F-4BC5-A0EC-7FABCCE71CED}
